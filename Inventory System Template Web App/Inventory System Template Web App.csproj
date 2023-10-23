@@ -7,4 +7,9 @@
     <RootNamespace>Inventory_System_Template_Web_App</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.12" />
+    <PackageReference Include="MySql.Data.EntityFramework" Version="8.1.0" />
+  </ItemGroup>
+
 </Project>
