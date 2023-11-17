@@ -29,3 +29,15 @@ C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net7.0\Inventory System Template Web App.pdb
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net7.0\Inventory System Template Web App.genruntimeconfig.cache
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net7.0\ref\Inventory System Template Web App.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\System.CodeDom.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net7.0\Inventory System Template Web App.csproj.AssemblyReference.cache
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net7.0\Inventory System Template Web App.csproj.CopyComplete
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Humanizer.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\MySqlConnector.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll

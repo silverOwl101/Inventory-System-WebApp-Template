@@ -2,7 +2,7 @@
 
 namespace Inventory_System_Template_Web_App.Models
 {
-    public class Items
+    public class Item
     {
         [Key]
         public required Guid Guid { get; set; }
