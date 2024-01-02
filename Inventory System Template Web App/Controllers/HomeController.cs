@@ -14,9 +14,7 @@ namespace Inventory_System_Template_Web_App.Controllers
         }
 
         public IActionResult Index()
-        {
-            int currentYear = DateTime.Now.Year;
-            ViewBag.CurrentYear = currentYear;
+        {            
             return View();
         }
 

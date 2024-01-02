@@ -75,7 +75,8 @@
     <footer class="footer mt-auto py-3 bg-body-tertiary">
         <div class="container">
             <span class="text-body-secondary">Developed by: John Harold Paluca</span>
-            <span class="text-body-secondary">&copy; 2020 – @ViewBag.CurrentYear</span>
+            <span class="text-body-secondary">&copy; 2020 – 
+                <script>document.write( new Date().getFullYear() );</script></span>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
