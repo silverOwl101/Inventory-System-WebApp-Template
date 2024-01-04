@@ -14,6 +14,12 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 
 var app = builder.Build();
 
+// This is where we seed the data
+//if (args.length == 1 && args[0].tolower() == "seeddata")
+//{
+//    seed.seeddata(app); 
+//}
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

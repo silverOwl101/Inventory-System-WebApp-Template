@@ -1,7 +1,30 @@
-﻿@*
+﻿@model IEnumerable<Account>
+
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
 
 <h1>Account</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Account Name</th>
+            <th scope="col">DateCreated</th>            
+        </tr>
+    </thead>
+    <tbody>
+        @* Example of Deferred Execution https://www.tutorialsteacher.com/linq/linq-deferred-execution *@
+        @foreach (var item in Model) // The Query will execute here in foreach loop
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.AccountName</td>
+                <td>@item.DateCreated</td>                
+            </tr>
+        }                
+    </tbody>
+</table>
