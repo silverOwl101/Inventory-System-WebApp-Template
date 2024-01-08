@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Exxxcube files/Projects/C\#/Inventory System Template Web App/Inventory System Template Web App/Views/Account/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Exxxcube files/Projects/C\#/Inventory System Template Web App/Inventory System Template Web App/Views/Account/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
