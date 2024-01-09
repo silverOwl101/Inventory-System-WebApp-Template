@@ -13,20 +13,20 @@ namespace Inventory_System_Template_Web_App.Repository
         {
             _context = context;
         }
-        public bool Add(Account account)
+        public async Task<bool> Add(Account account)
         {
-            _context.Add(account);
-            return Save();
+            await _context.AddAsync(account);
+            return await Save();
         }
-        public bool Update(Account account)
+        public async Task<bool> Update(Account account)
         {
             _context.Update(account);
-            return Save();
+            return await Save();
         }
-        public bool Delete(Account account)
+        public async Task<bool> Delete(Account account)
         {
             _context.Remove(account);
-            return Save();
+            return await Save();
         }
         public async Task<IEnumerable<Account>> GetAll()
         {
@@ -36,9 +36,9 @@ namespace Inventory_System_Template_Web_App.Repository
         {            
             return await _context.Accounts.FirstOrDefaultAsync(i => i.Id == id) ?? throw new ArgumentNullException();
         }
-        public bool Save()
+        public async Task<bool> Save()
         {
-            var save = _context.SaveChanges();
+            var save = await _context.SaveChangesAsync();
             return save > 0 ? true : false;
         }        
     }

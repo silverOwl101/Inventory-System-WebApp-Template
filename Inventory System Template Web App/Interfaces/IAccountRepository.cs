@@ -6,9 +6,9 @@ namespace Inventory_System_Template_Web_App.Interfaces
     {
         Task<IEnumerable<Account>> GetAll();
         Task<Account> GetByIdAsync(string id);
-        bool Add(Account account);
-        bool Update(Account account);
-        bool Delete(Account account);
-        bool Save();
+        Task<bool> Add(Account account);
+        Task<bool> Update(Account account);
+        Task<bool> Delete(Account account);
+        Task<bool> Save();
     }
 }

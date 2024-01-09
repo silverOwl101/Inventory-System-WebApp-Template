@@ -32,14 +32,14 @@ namespace Inventory_System_Template_Web_App.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Account account)
+        public async Task<IActionResult> Create(Account account)
         {                            
             if (!ModelState.IsValid)
             {
                 return View(account);
             }
             
-            _accountRepository.Add(account);
+            await _accountRepository.Add(account);
             return RedirectToAction("Index");
         }
     }
