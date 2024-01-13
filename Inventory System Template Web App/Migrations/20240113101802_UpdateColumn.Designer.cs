@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Inventory_System_Template_Web_App.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20231117172129_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20240113101802_UpdateColumn")]
+    partial class UpdateColumn
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,6 +41,9 @@ namespace Inventory_System_Template_Web_App.Migrations
 
                     b.Property<string>("Id")
                         .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Image")
                         .HasColumnType("longtext");
 
                     b.Property<DateTime>("LastUpdated")

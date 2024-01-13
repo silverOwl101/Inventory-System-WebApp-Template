@@ -41,3 +41,5 @@ C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Mono.TextTemplating.dll
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\MySqlConnector.dll
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\CloudinaryDotNet.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net7.0\Newtonsoft.Json.dll

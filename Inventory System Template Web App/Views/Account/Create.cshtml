@@ -4,20 +4,29 @@
 }
 
 
-<main class="form-signin w-100 m-auto">
-    <form method="post" asp-action="Create">
-        <h1 class="h3 mb-3 fw-normal">Create Account</h1>
-        
-        <div class="form-floating mb-3">
-            <input asp-for="AccountName" class="form-control" id="floatingInput" placeholder="Account name">
-            <label for="floatingInput">Account name</label>
-            <span asp-validation-for="AccountName" class="text-danger"></span>
-        </div>
-        <div class="form-floating">
-            <input asp-for="AccountPass" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
-            <span asp-validation-for="AccountPass" class="text-danger"></span>
-        </div>
-        <button class="btn btn-primary w-100 py-2" type="submit">Submit</button>
-    </form>
-</main>
+<div class="container vh-100 d-flex align-items-center justify-content-center">
+    <form method="post" asp-action="Create" enctype="multipart/form-data">
+
+    <!-- Text Input -->
+    <div class="mb-3">
+      <label for="name" class="form-label">Account Name</label>
+      <input asp-for="AccountName" class="form-control" placeholder="Enter your account name" required>
+    </div>
+
+    <!-- Email Input -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Password</label>
+      <input asp-for="AccountPass" type="password" class="form-control" placeholder="Enter your password" required>
+    </div>
+
+    <!-- Image Upload -->
+    <div class="mb-3">
+      <label for="image" class="form-label">Upload Image:</label>
+      <input asp-for="Image" type="file" class="form-control" accept="image/*" required>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+</div>

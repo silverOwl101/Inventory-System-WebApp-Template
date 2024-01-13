@@ -30,7 +30,7 @@ namespace Inventory_System_Template_Web_App.Repository
         }
         public async Task<IEnumerable<Account>> GetAll()
         {
-            return await _context.Accounts.ToListAsync();
+            return await _context.Accounts.OrderByDescending(x => x.DateCreated).ToListAsync();
         }
         public async Task<Account> GetByIdAsync(string id)
         {            

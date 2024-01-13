@@ -40,6 +40,9 @@ namespace Inventory_System_Template_Web_App.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Image")
+                        .HasColumnType("longtext");
+
                     b.Property<DateTime>("LastUpdated")
                         .HasColumnType("datetime(6)");
 

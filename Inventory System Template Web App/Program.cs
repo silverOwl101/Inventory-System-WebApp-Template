@@ -1,6 +1,9 @@
+using CloudinaryDotNet;
 using Inventory_System_Template_Web_App.Data;
+using Inventory_System_Template_Web_App.Helpers;
 using Inventory_System_Template_Web_App.Interfaces;
 using Inventory_System_Template_Web_App.Repository;
+using Inventory_System_Template_Web_App.Services;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -9,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IAccountRepository, AccountRepository>();
+builder.Services.AddScoped<IPhotoService, PhotoService>();
+builder.Services.Configure<CloudinarySettings>(builder.Configuration.GetSection("CloudinarySettings"));
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnectionString");
 builder.Services.AddDbContext<ApplicationDBContext>(options =>
