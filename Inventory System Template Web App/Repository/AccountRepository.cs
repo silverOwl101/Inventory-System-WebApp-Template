@@ -36,6 +36,10 @@ namespace Inventory_System_Template_Web_App.Repository
         {            
             return await _context.Accounts.FirstOrDefaultAsync(i => i.Id == id) ?? throw new ArgumentNullException();
         }
+        public async Task<Account> GetByIdAsyncAsNoTraking(string id)
+        {
+            return await _context.Accounts.AsNoTracking().FirstOrDefaultAsync(i => i.Id == id) ?? throw new ArgumentNullException();
+        }
         public async Task<bool> Save()
         {
             var save = await _context.SaveChangesAsync();
