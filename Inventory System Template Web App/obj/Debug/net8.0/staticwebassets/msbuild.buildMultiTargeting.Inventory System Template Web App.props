@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Inventory System Template Web App.props" />
+</Project>

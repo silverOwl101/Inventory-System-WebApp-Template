@@ -7,7 +7,7 @@ namespace Inventory_System_Template_Web_App.Models
     public class Account
     {
         [Key]
-        public required Guid Guid { get; set; }
+        public Guid Guid { get; set; }
         public required string Id { get; set; }
         public required string AccountName { get; set; }
         [DataType(DataType.Password)]

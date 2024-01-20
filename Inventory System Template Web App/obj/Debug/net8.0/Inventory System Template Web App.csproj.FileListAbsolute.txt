@@ -1,0 +1,114 @@
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\appsettings.Development.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\appsettings.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\libman.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Inventory System Template Web App.staticwebassets.runtime.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Inventory System Template Web App.exe
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Inventory System Template Web App.deps.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Inventory System Template Web App.runtimeconfig.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Inventory System Template Web App.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Inventory System Template Web App.pdb
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\CloudinaryDotNet.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Humanizer.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Mono.TextTemplating.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\MySqlConnector.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\System.CodeDom.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\System.Composition.Convention.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\System.Composition.Hosting.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\System.Composition.Runtime.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.csproj.AssemblyReference.cache
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.AssemblyInfoInputs.cache
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.AssemblyInfo.cs
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.csproj.CoreCompileInputs.cache
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.MvcApplicationPartsAssemblyInfo.cache
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.RazorAssemblyInfo.cache
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.RazorAssemblyInfo.cs
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.sourcelink.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\staticwebassets.build.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\staticwebassets.development.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\staticwebassets\msbuild.Inventory System Template Web App.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\staticwebassets\msbuild.build.Inventory System Template Web App.props
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Inventory System Template Web App.props
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Inventory System Template Web App.props
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\scopedcss\bundle\Inventory System Template Web App.styles.css
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\scopedcss\projectbundle\Inventory System Template Web App.bundle.scp.css
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.csproj.CopyComplete
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\refint\Inventory System Template Web App.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.pdb
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.genruntimeconfig.cache
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\ref\Inventory System Template Web App.dll

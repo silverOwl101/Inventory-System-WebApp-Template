@@ -2,8 +2,11 @@ using CloudinaryDotNet;
 using Inventory_System_Template_Web_App.Data;
 using Inventory_System_Template_Web_App.Helpers;
 using Inventory_System_Template_Web_App.Interfaces;
+using Inventory_System_Template_Web_App.Models;
 using Inventory_System_Template_Web_App.Repository;
 using Inventory_System_Template_Web_App.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -20,14 +23,20 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
 {
     options.UseMySql(connectionString,ServerVersion.AutoDetect(connectionString));
 });
+builder.Services.AddIdentity<AppUser, IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDBContext>();
+builder.Services.AddMemoryCache();
+builder.Services.AddSession();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
 
 var app = builder.Build();
 
 // This is where we seed the data
-//if (args.length == 1 && args[0].tolower() == "seeddata")
-//{
-//    seed.seeddata(app); 
-//}
+if (args.Length == 1 && args[0].ToLower() == "seeddata")
+{
+    await Seed.SeedUsersAndRolesAsync(app);
+    //seed.seeddata(app);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
