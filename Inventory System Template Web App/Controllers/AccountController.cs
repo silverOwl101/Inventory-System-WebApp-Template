@@ -4,24 +4,66 @@ using Inventory_System_Template_Web_App.Interfaces;
 using Inventory_System_Template_Web_App.Models;
 using Inventory_System_Template_Web_App.Utilities;
 using Inventory_System_Template_Web_App.ViewModels;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Principal;
-using static System.Net.Mime.MediaTypeNames;
+
 
 namespace Inventory_System_Template_Web_App.Controllers
 {
     public class AccountController : Controller
     {
+        private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
         private readonly IAccountRepository _accountRepository;
-        private readonly IPhotoService _photoService;
+        private readonly IPhotoService _photoService;        
 
-        public AccountController(IAccountRepository accountRepository,IPhotoService photoService)
+        public AccountController(UserManager<AppUser> userManager,
+                                 SignInManager<AppUser> signInManager,
+                                 IAccountRepository accountRepository,IPhotoService photoService)
         {
+            _userManager = userManager;
+            _signInManager = signInManager;
             _accountRepository = accountRepository;
             _photoService = photoService;
         }
+        public IActionResult Register(string? returnUrl = null)
+        {
+            RegisterViewModel registerViewModel = new RegisterViewModel();
+            registerViewModel.ReturnUrl = returnUrl;
+            return View(registerViewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterViewModel registerViewModel, string? returnUrl = null)
+        {
+            registerViewModel.ReturnUrl = returnUrl;
+            returnUrl = returnUrl ?? Url.Content("~/");
+            if (ModelState.IsValid)
+            {
+                AppUser user = new AppUser { Email = registerViewModel.Email, UserName = registerViewModel.Username };
+                var result = await _userManager.CreateAsync(user, registerViewModel.Password!);
+                if (result.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    return LocalRedirect(returnUrl);
+                }
+                ModelState.AddModelError("Password",result.ToString());
+            }
+            return View(registerViewModel);
+        }
         public async Task<IActionResult> Index() // Controller
         {
+            //try
+            //{                
+            //    string? userId = HttpContext.Session.GetString("userId");
+            //    if (string.IsNullOrEmpty(userId))
+            //    {
+            //        return RedirectToAction("Index", "Home");
+            //    }
+            //}
+            //catch
+            //{
+            //    return RedirectToAction("Index", "Home");
+            //}
             var account = await _accountRepository.GetAll(); // Model
             return View(account); // View
 

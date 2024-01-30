@@ -221,7 +221,7 @@ namespace Inventory_System_Template_Web_App.Migrations
 
                     b.HasIndex("AppUserId");
 
-                    b.ToTable("InventoryUsers");
+                    b.ToTable("ProgramUsers");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
