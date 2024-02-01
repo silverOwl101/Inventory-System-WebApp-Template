@@ -3,11 +3,15 @@
 namespace Inventory_System_Template_Web_App.ViewModels
 {
     public class LoginViewModel
-    {
-        [Display(Name = "Email Address")]
-        [Required(ErrorMessage = "Email address is required")]
-        public required string Email { get; set; }
+    {       
+        [Required]
+        public string? UserName { get; set; }
+        [Required]
         [DataType(DataType.Password)]
-        public required string  Password { get; set; }
+        public string? Password { get; set; }
+        [Display(Name = "Remember Me?")]
+        public bool RememberMe { get; set; }
+        public string? ReturnUrl { get; set; }        
     }
 }
+

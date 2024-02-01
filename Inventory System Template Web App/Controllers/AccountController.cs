@@ -6,6 +6,7 @@ using Inventory_System_Template_Web_App.Utilities;
 using Inventory_System_Template_Web_App.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 
 namespace Inventory_System_Template_Web_App.Controllers
@@ -15,11 +16,11 @@ namespace Inventory_System_Template_Web_App.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly IAccountRepository _accountRepository;
-        private readonly IPhotoService _photoService;        
+        private readonly IPhotoService _photoService;
 
         public AccountController(UserManager<AppUser> userManager,
                                  SignInManager<AppUser> signInManager,
-                                 IAccountRepository accountRepository,IPhotoService photoService)
+                                 IAccountRepository accountRepository, IPhotoService photoService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
@@ -43,34 +44,37 @@ namespace Inventory_System_Template_Web_App.Controllers
                 var result = await _userManager.CreateAsync(user, registerViewModel.Password!);
                 if (result.Succeeded)
                 {
-                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    //await _signInManager.SignInAsync(user, isPersistent: false);
                     return LocalRedirect(returnUrl);
                 }
-                ModelState.AddModelError("Password",result.ToString());
+                ModelState.AddModelError("Password", result.ToString());
             }
             return View(registerViewModel);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> LogOff()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
+        }
         public async Task<IActionResult> Index() // Controller
         {
-            //try
-            //{                
-            //    string? userId = HttpContext.Session.GetString("userId");
-            //    if (string.IsNullOrEmpty(userId))
-            //    {
-            //        return RedirectToAction("Index", "Home");
-            //    }
-            //}
-            //catch
-            //{
-            //    return RedirectToAction("Index", "Home");
-            //}
-            var account = await _accountRepository.GetAll(); // Model
-            return View(account); // View
+            if (_signInManager.IsSignedIn(User))
+            {                                             
+                var account = await _accountRepository.GetAll(); // Model
 
-            //// Example of Deferred Execution https://www.tutorialsteacher.com/linq/linq-deferred-execution
-            //var account = _context.Accounts.ToList(); // Model
-            //return View(account); // View
-        }
+                return View(account); // View
+
+                //// Example of Deferred Execution https://www.tutorialsteacher.com/linq/linq-deferred-execution
+                //var account = _context.Accounts.ToList(); // Model
+                //return View(account); // View
+            }
+            else
+            {
+                return RedirectToAction("Index", "Home");
+            }            
+        }       
         public IActionResult Detail()
         {
             return View();

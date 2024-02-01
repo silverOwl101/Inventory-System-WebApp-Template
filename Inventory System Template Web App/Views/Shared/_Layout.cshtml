@@ -70,7 +70,16 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
-                        </li>                        
+                        </li>
+                        @if (User.Identity is not null && User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <form id="logoutForm" method="post" class="form-inline" asp-controller="Account"
+                                      asp-action="LogOff">
+                                    <button type="submit" class="btn nav-link">Logout</button>
+                                </form>
+                            </li>
+                        }                        
                     </ul>                    
                 </div>
             </div>

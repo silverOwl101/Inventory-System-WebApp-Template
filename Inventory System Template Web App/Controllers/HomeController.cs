@@ -14,7 +14,7 @@ namespace Inventory_System_Template_Web_App.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
-        private readonly ApplicationDBContext _applicationDBContext;        
+        private readonly ApplicationDBContext _applicationDBContext;
 
         public HomeController(ILogger<HomeController> logger, UserManager<AppUser> userManager,
                               SignInManager<AppUser> signInManager, ApplicationDBContext applicationDBContext)
@@ -24,11 +24,42 @@ namespace Inventory_System_Template_Web_App.Controllers
             _signInManager = signInManager;
             _applicationDBContext = applicationDBContext;
         }
-
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Index(string? returnUrl = null)
         {            
-            return View();
-        }        
+            LoginViewModel loginViewModel = new LoginViewModel();
+            if (_signInManager.IsSignedIn(User))
+            {
+                return RedirectToAction("Index", "Account");
+            }
+            else
+            {
+                loginViewModel.ReturnUrl = returnUrl ?? Url.Content("~/");
+            }
+            return View(loginViewModel);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Index(LoginViewModel loginViewModel, string? returnUrl = null)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(loginViewModel.UserName!,
+                                                                      loginViewModel.Password!,
+                                                                      loginViewModel.RememberMe,
+                                                                      lockoutOnFailure: false);
+                if (result.Succeeded)
+                {                    
+                    return RedirectToAction("Index","Account");                    
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    return View(loginViewModel);
+                }
+            }
+            return View(loginViewModel);
+        }
         public IActionResult Privacy()
         {
             return View();
