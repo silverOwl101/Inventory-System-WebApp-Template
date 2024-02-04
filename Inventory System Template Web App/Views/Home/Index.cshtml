@@ -13,7 +13,7 @@
                 <span>@TempData["Error"]</span>
             </div>
         }
-        <div class="form-floating">
+        <div class="form-floating mb-2">
             <input asp-for="UserName" class="form-control" id="floatingInput" placeholder="Username">
             <label for="floatingInput">Username</label>
         </div>
@@ -21,6 +21,7 @@
             <input asp-for="Password" class="form-control" id="floatingPassword" placeholder="Password">
             <label for="floatingPassword">Password</label>
         </div>        
-        <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>        
+        <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>   
+        <p> <a asp-action="ForgotPassword"> Forgot your password?</a></p>
     </form>
 </main>

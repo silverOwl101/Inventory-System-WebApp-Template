@@ -115,3 +115,5 @@ C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.MvcApplicationPartsAssemblyInfo.cs
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\SendGrid.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\StarkbankEcdsa.dll
