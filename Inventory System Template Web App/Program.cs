@@ -30,8 +30,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequiredLength = 8;
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
-    options.Lockout.MaxFailedAccessAttempts = 5;
-    options.SignIn.RequireConfirmedAccount = true;
+    options.Lockout.MaxFailedAccessAttempts = 5;    
 });
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {

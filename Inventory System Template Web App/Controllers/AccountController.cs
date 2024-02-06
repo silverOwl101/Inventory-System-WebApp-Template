@@ -6,6 +6,8 @@ using Inventory_System_Template_Web_App.Utilities;
 using Inventory_System_Template_Web_App.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore.Storage.Json;
 using System.Security.Claims;
 
 
@@ -29,8 +31,9 @@ namespace Inventory_System_Template_Web_App.Controllers
         }
         public IActionResult Register(string? returnUrl = null)
         {
-            RegisterViewModel registerViewModel = new RegisterViewModel();
+            RegisterViewModel registerViewModel = new RegisterViewModel();           
             registerViewModel.ReturnUrl = returnUrl;
+            registerViewModel.RoleList = LoadRoleList();
             return View(registerViewModel);
         }
         [HttpPost]
@@ -44,11 +47,15 @@ namespace Inventory_System_Template_Web_App.Controllers
                 var result = await _userManager.CreateAsync(user, registerViewModel.Password!);
                 if (result.Succeeded)
                 {
-                    //await _signInManager.SignInAsync(user, isPersistent: false);
+                    if (registerViewModel.RoleSelected != null)
+                    {
+                        await _userManager.AddToRoleAsync(user, registerViewModel.RoleSelected);
+                    }                    
                     return LocalRedirect(returnUrl);
                 }
                 ModelState.AddModelError("Password", result.ToString());
             }
+            registerViewModel.RoleList = LoadRoleList();
             return View(registerViewModel);
         }
         [HttpPost]
@@ -62,8 +69,7 @@ namespace Inventory_System_Template_Web_App.Controllers
         {
             if (_signInManager.IsSignedIn(User))
             {                                             
-                var account = await _accountRepository.GetAll(); // Model
-
+                var account = await _accountRepository.GetAll(); // Model                
                 return View(account); // View
 
                 //// Example of Deferred Execution https://www.tutorialsteacher.com/linq/linq-deferred-execution
@@ -83,6 +89,7 @@ namespace Inventory_System_Template_Web_App.Controllers
         {
             return View();
         }
+
         [HttpPost]
         public async Task<IActionResult> Create(AccountViewModel accountVM)
         {
@@ -161,6 +168,21 @@ namespace Inventory_System_Template_Web_App.Controllers
                 }                
             }
             return RedirectToAction("Index");
+        }
+        private List<SelectListItem> LoadRoleList()
+        {
+            List<SelectListItem> listItems = new List<SelectListItem>();
+            listItems.Add(new SelectListItem()
+            {
+                Value = "Admin",
+                Text = "Admin"
+            });
+            listItems.Add(new SelectListItem()
+            {
+                Value = "User",
+                Text = "User"
+            });
+            return listItems;
         }
     }
 }

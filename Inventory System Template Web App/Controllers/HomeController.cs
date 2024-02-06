@@ -55,7 +55,7 @@ namespace Inventory_System_Template_Web_App.Controllers
                 var result = await _signInManager.PasswordSignInAsync(loginViewModel.UserName!,
                                                                       loginViewModel.Password!,
                                                                       loginViewModel.RememberMe,
-                                                                      lockoutOnFailure: true);
+                                                                      lockoutOnFailure: false);
                 if (result.Succeeded)
                 {                    
                     return RedirectToAction("Index","Account");                    

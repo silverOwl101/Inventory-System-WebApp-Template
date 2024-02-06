@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System.ComponentModel.DataAnnotations;
 
 namespace Inventory_System_Template_Web_App.ViewModels
 {
@@ -19,6 +20,8 @@ namespace Inventory_System_Template_Web_App.ViewModels
         [DataType(DataType.Password)]
         [Compare("Password", ErrorMessage = "Password do not match")]
         public string? ConfirmPassword { get; set; }
+        public IEnumerable<SelectListItem>? RoleList { get; set; }
+        public string? RoleSelected { get; set; }
         public string? ReturnUrl { get; set; }
     }
 }
