@@ -15,5 +15,6 @@ namespace Inventory_System_Template_Web_App.Data
         public DbSet<Account> Accounts { get; set; }
         public DbSet<User> ProgramUsers { get; set; }
         public DbSet<Item> Items { get; set; }
+        public DbSet<AppUser> AppUsers { get; set; }        
     }
 }
