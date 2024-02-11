@@ -52,7 +52,7 @@ namespace Inventory_System_Template_Web_App.Repository
 
         public async Task<AppUser> GetByIdAsync(string id)
         {
-            var user = _context.AppUsers.FirstOrDefaultAsync(x => x.Id == id);
+            var user = _context.AppUsers.FirstOrDefaultAsync(x => x.Id == id);            
             return await user ?? new AppUser() { };
         }
         

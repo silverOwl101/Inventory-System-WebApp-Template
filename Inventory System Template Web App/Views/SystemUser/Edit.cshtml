@@ -1,0 +1,42 @@
+﻿@using Inventory_System_Template_Web_App.ViewModels
+@model AppUserViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<br/>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1 class="text-info">Edit User</h1>
+            <form method="post" asp-action="Edit">
+                <input asp-for="@Model.Id" hidden />
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="NickName"></label>
+                    <input asp-for="NickName" class="form-control" />
+                    <span asp-validation-for="NickName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Email"></label>
+                    <input asp-for="Email" readonly class="form-control" />
+                    <input asp-for="Email" hidden />
+                </div>
+                <div class="form-group">
+                    <label asp-for="RoleId"></label>
+                    <select asp-for="RoleId" asp-items="@Model.RoleList" class="form-control">
+                    </select>
+                </div>
+                <br />
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Update</button>
+                    <a asp-action="Index" class="btn btn-warning" style="width:auto">Back to User</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

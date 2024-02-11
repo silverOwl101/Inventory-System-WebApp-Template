@@ -1,10 +1,10 @@
 ﻿using Inventory_System_Template_Web_App.Data;
 using Inventory_System_Template_Web_App.Interfaces;
-using Inventory_System_Template_Web_App.Migrations;
 using Inventory_System_Template_Web_App.Models;
 using Inventory_System_Template_Web_App.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Inventory_System_Template_Web_App.Controllers
 {
@@ -50,6 +50,35 @@ namespace Inventory_System_Template_Web_App.Controllers
             }
             
             return View(appUserList);
+        }
+        [HttpGet]
+        public async Task<IActionResult> Edit(string id)
+        {
+            AppUserViewModel viewModel = new AppUserViewModel();
+            var user = _systemUserRepo.GetByIdAsync(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            viewModel.NickName = user.Result.NickName;
+            viewModel.Email = user.Result.Email;
+            var userRoles = await _systemUserRepo.GetAllUserRoles();
+            var roles = await _systemUserRepo.GetAllRoles();
+            var role = await _systemUserRepo.GetUserRole(user.Result.Id);
+            viewModel.RoleId = role != null ? role.RoleId : null;
+            var roleList = roles.Select(x => new SelectListItem
+            {
+                Text = x.Name!.ToUpper(),
+                Value = x.Id
+            });
+            viewModel.RoleList = roleList;
+            
+            return View(viewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit()
+        {
+            return View();
         }
     }
 }

@@ -85,6 +85,9 @@ namespace Inventory_System_Template_Web_App.Migrations
                     b.Property<int?>("Milage")
                         .HasColumnType("int");
 
+                    b.Property<string>("NickName")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
                         .HasColumnType("varchar(256)");
