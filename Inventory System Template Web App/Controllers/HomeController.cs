@@ -1,16 +1,10 @@
 ﻿using Inventory_System_Template_Web_App.Data;
 using Inventory_System_Template_Web_App.Interfaces;
 using Inventory_System_Template_Web_App.Models;
-using Inventory_System_Template_Web_App.Services;
 using Inventory_System_Template_Web_App.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.SignalR;
-using SendGrid;
 using System.Diagnostics;
-using System.Numerics;
-using System.Security.Claims;
-using System.Web;
 
 namespace Inventory_System_Template_Web_App.Controllers
 {
@@ -34,7 +28,7 @@ namespace Inventory_System_Template_Web_App.Controllers
         }
         [HttpGet]
         public IActionResult Index(string? returnUrl = null)
-        {            
+        {
             LoginViewModel loginViewModel = new LoginViewModel();
             if (_signInManager.IsSignedIn(User))
             {
@@ -57,8 +51,8 @@ namespace Inventory_System_Template_Web_App.Controllers
                                                                       loginViewModel.RememberMe,
                                                                       lockoutOnFailure: false);
                 if (result.Succeeded)
-                {                    
-                    return RedirectToAction("Index","Account");                    
+                {
+                    return RedirectToAction("Index", "Account");
                 }
                 if (result.IsLockedOut)
                 {
@@ -87,13 +81,13 @@ namespace Inventory_System_Template_Web_App.Controllers
             if (ModelState.IsValid)
             {
                 var user = await _userManager.FindByEmailAsync(forgotPasswordViewModel.Email!);
-                if (user == null) 
+                if (user == null)
                 {
                     return RedirectToAction("ForgotPassword");
                 }
                 var code = await _userManager.GeneratePasswordResetTokenAsync(user);
-                var callbackUrl = Url.Action("ResetPassword","Account",
-                                            new { userId = user.Id, code = code! }, 
+                var callbackUrl = Url.Action("ResetPassword", "Account",
+                                            new { userId = user.Id, code = code! },
                                             protocol: HttpContext.Request.Scheme);
                 await _emailService.SendEmailAsync(forgotPasswordViewModel.Email!, "Reset Email Confirmation",
                                                    "Please reset email by going to this " +

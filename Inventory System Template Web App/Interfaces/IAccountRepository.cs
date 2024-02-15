@@ -6,7 +6,7 @@ namespace Inventory_System_Template_Web_App.Interfaces
     {
         Task<IEnumerable<Account>> GetAll();
         Task<Account> GetByIdAsync(string id);
-        Task<Account> GetByIdAsyncAsNoTraking(string id);        
+        Task<Account> GetByIdAsyncAsNoTraking(string id);
         Task<bool> Add(Account account);
         Task<bool> Update(Account account);
         Task<bool> Delete(Account account);

@@ -1,8 +1,8 @@
 ﻿using Inventory_System_Template_Web_App.Helpers;
 using Inventory_System_Template_Web_App.Interfaces;
 using Microsoft.Extensions.Options;
-using SendGrid.Helpers.Mail;
 using SendGrid;
+using SendGrid.Helpers.Mail;
 
 namespace Inventory_System_Template_Web_App.Services
 {

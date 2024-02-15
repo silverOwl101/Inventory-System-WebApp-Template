@@ -33,7 +33,7 @@ namespace Inventory_System_Template_Web_App.Repository
             return await _context.Accounts.OrderByDescending(x => x.DateCreated).ToListAsync();
         }
         public async Task<Account> GetByIdAsync(string id)
-        {            
+        {
             return await _context.Accounts.FirstOrDefaultAsync(i => i.Id == id) ?? throw new ArgumentNullException();
         }
         public async Task<Account> GetByIdAsyncAsNoTraking(string id)
@@ -44,6 +44,6 @@ namespace Inventory_System_Template_Web_App.Repository
         {
             var save = await _context.SaveChangesAsync();
             return save > 0 ? true : false;
-        }        
+        }
     }
 }

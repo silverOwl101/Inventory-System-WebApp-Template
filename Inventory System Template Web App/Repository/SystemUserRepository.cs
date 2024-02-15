@@ -28,8 +28,8 @@ namespace Inventory_System_Template_Web_App.Repository
 
         public async Task<IEnumerable<AppUser>> GetAll()
         {
-            var userList = _context.AppUsers.ToListAsync();            
-            return await userList;            
+            var userList = _context.AppUsers.ToListAsync();
+            return await userList;
         }
 
         public async Task<IEnumerable<IdentityUserRole<string>>> GetAllUserRoles()
@@ -52,14 +52,14 @@ namespace Inventory_System_Template_Web_App.Repository
 
         public async Task<AppUser> GetByIdAsync(string id)
         {
-            var user = _context.AppUsers.FirstOrDefaultAsync(x => x.Id == id);            
+            var user = _context.AppUsers.FirstOrDefaultAsync(x => x.Id == id);
             return await user ?? new AppUser() { };
         }
-        
+
         public async Task<bool> Save()
         {
             int save = await _context.SaveChangesAsync();
             return save > 0 ? true : false;
-        }        
+        }
     }
 }

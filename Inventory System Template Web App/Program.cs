@@ -1,4 +1,3 @@
-using CloudinaryDotNet;
 using Inventory_System_Template_Web_App.Data;
 using Inventory_System_Template_Web_App.Helpers;
 using Inventory_System_Template_Web_App.Interfaces;
@@ -6,7 +5,6 @@ using Inventory_System_Template_Web_App.Models;
 using Inventory_System_Template_Web_App.Repository;
 using Inventory_System_Template_Web_App.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -31,7 +29,7 @@ builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequiredLength = 8;
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
-    options.Lockout.MaxFailedAccessAttempts = 5;    
+    options.Lockout.MaxFailedAccessAttempts = 5;
 });
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
@@ -60,7 +58,7 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
-    
+
 }
 
 app.UseHttpsRedirection();

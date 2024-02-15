@@ -1,6 +1,4 @@
-﻿using CloudinaryDotNet;
-using Inventory_System_Template_Web_App.Data;
-using Inventory_System_Template_Web_App.Interfaces;
+﻿using Inventory_System_Template_Web_App.Interfaces;
 using Inventory_System_Template_Web_App.Models;
 using Inventory_System_Template_Web_App.Utilities;
 using Inventory_System_Template_Web_App.ViewModels;
@@ -8,8 +6,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore.Storage.Json;
-using System.Security.Claims;
 
 
 namespace Inventory_System_Template_Web_App.Controllers
@@ -108,7 +104,7 @@ namespace Inventory_System_Template_Web_App.Controllers
                 return RedirectToAction("Index");
             }
             else
-                ModelState.AddModelError("","Photo upload failed");
+                ModelState.AddModelError("", "Photo upload failed");
 
             return View(accountVM);
         }
@@ -142,7 +138,7 @@ namespace Inventory_System_Template_Web_App.Controllers
                 }
                 catch (Exception ex)
                 {
-                    ModelState.AddModelError("", "Could not delete photo "+ ex.ToString());
+                    ModelState.AddModelError("", "Could not delete photo " + ex.ToString());
                     return View(editVM);
                 }
                 if (editVM.Image != null)
@@ -158,13 +154,13 @@ namespace Inventory_System_Template_Web_App.Controllers
                         DateCreated = account.DateCreated,
                         LastUpdated = DateTime.Now
                     };
-                    await _accountRepository.Update(editAccount);                    
+                    await _accountRepository.Update(editAccount);
                 }
-                else 
+                else
                 {
                     ModelState.AddModelError("", "Image cannot be empty");
                     return View(editVM);
-                }                
+                }
             }
             return RedirectToAction("Index");
         }

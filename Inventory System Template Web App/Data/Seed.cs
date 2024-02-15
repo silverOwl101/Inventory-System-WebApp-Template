@@ -1,6 +1,4 @@
-﻿using Inventory_System_Template_Web_App.Models;
-using Microsoft.AspNetCore.Identity;
-using System.Net;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace Inventory_System_Template_Web_App.Data
 {
@@ -54,7 +52,7 @@ namespace Inventory_System_Template_Web_App.Data
         public static void SeedData(IApplicationBuilder applicationBuilder)
         {
             using (var serviceScope = applicationBuilder.ApplicationServices.CreateScope())
-            {                
+            {
                 var context = serviceScope.ServiceProvider.GetService<ApplicationDBContext>();
 
                 context.Database.EnsureCreated();

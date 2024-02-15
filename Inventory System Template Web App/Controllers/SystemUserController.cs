@@ -1,6 +1,4 @@
-﻿using Inventory_System_Template_Web_App.Data;
-using Inventory_System_Template_Web_App.Interfaces;
-using Inventory_System_Template_Web_App.Models;
+﻿using Inventory_System_Template_Web_App.Interfaces;
 using Inventory_System_Template_Web_App.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -48,7 +46,7 @@ namespace Inventory_System_Template_Web_App.Controllers
                 };
                 appUserList.Add(viewModel);
             }
-            
+
             return View(appUserList);
         }
         [HttpGet]
@@ -72,7 +70,7 @@ namespace Inventory_System_Template_Web_App.Controllers
                 Value = x.Id
             });
             viewModel.RoleList = roleList;
-            
+
             return View(viewModel);
         }
         [HttpPost]

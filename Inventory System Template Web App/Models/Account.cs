@@ -1,6 +1,4 @@
-﻿using Inventory_System_Template_Web_App.Utilities;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Inventory_System_Template_Web_App.Models
 {
