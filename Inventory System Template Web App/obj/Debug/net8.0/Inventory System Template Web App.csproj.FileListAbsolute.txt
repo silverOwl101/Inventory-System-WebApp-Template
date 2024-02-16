@@ -106,7 +106,6 @@ C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\scopedcss\bundle\Inventory System Template Web App.styles.css
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\scopedcss\projectbundle\Inventory System Template Web App.bundle.scp.css
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.csproj.CopyComplete
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.dll
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\refint\Inventory System Template Web App.dll
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.pdb
@@ -117,3 +116,4 @@ C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventory System Template Web App.MvcApplicationPartsAssemblyInfo.cs
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\SendGrid.dll
 C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\bin\Debug\net8.0\StarkbankEcdsa.dll
+C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net8.0\Inventor.0396631A.Up2Date

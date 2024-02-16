@@ -13,17 +13,20 @@ namespace Inventory_System_Template_Web_App.Repository
         {
             _context = context;
         }
-        public Task<bool> Add(AppUser account)
+        public async Task<bool> Add(AppUser account)
         {
-            throw new NotImplementedException();
+            await _context.AddAsync(account);
+            return await Save();
         }
-        public Task<bool> Update(AppUser account)
+        public async Task<bool> Update(AppUser account)
         {
-            throw new NotImplementedException();
+            _context.Update(account);
+            return await Save();
         }
-        public Task<bool> Delete(AppUser account)
+        public async Task<bool> Delete(AppUser account)
         {
-            throw new NotImplementedException();
+            _context.Remove(account);
+            return await Save();
         }
 
         public async Task<IEnumerable<AppUser>> GetAll()
@@ -43,16 +46,30 @@ namespace Inventory_System_Template_Web_App.Repository
             var userRole = _context.UserRoles.FirstOrDefaultAsync(x => x.UserId == id);
             return await userRole ?? new IdentityUserRole<string>() { UserId = string.Empty, RoleId = string.Empty };
         }
+        public async Task<IdentityUserRole<string>> GetUserRoleAsNoTracking(string id)
+        {
+            var userRole = _context.UserRoles.AsNoTracking().FirstOrDefaultAsync(x => x.UserId == id);
+            return await userRole ?? new IdentityUserRole<string>() { UserId = string.Empty, RoleId = string.Empty };
+        }
 
         public async Task<IEnumerable<IdentityRole>> GetAllRoles()
         {
             var roles = _context.Roles.ToListAsync();
             return await roles;
         }
-
+        public async Task<IEnumerable<IdentityRole>> GetAllRolesAsNoTracking()
+        {
+            var roles = _context.Roles.AsNoTracking().ToListAsync();
+            return await roles;
+        }
         public async Task<AppUser> GetByIdAsync(string id)
         {
             var user = _context.AppUsers.FirstOrDefaultAsync(x => x.Id == id);
+            return await user ?? new AppUser() { };
+        }
+        public async Task<AppUser> GetByIdAsyncNoTracking(string id)
+        {
+            var user = _context.AppUsers.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
             return await user ?? new AppUser() { };
         }
 
@@ -60,6 +77,11 @@ namespace Inventory_System_Template_Web_App.Repository
         {
             int save = await _context.SaveChangesAsync();
             return save > 0 ? true : false;
+        }
+
+        public string State(object obj)
+        {
+            return _context.Entry(obj).State.ToString();
         }
     }
 }
