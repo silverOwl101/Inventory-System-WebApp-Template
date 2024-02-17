@@ -121,5 +121,15 @@ namespace Inventory_System_Template_Web_App.Controllers
             userViewModel.RoleList = roleList;
             return View();
         }
+        [HttpPost]
+        public async Task<IActionResult> Delete(string id)
+        {
+            var user = await _systemUserRepo.GetByIdAsync(id);
+            if (user != null)
+            {
+                await _systemUserRepo.Delete(user);
+            }
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
