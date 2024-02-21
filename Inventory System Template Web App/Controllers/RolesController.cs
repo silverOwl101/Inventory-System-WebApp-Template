@@ -7,13 +7,11 @@ namespace Inventory_System_Template_Web_App.Controllers
 {
     public class RolesController : Controller
     {
-        private readonly ISystemUserRepository _systemUserRepository;
-        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly ISystemUserRepository _systemUserRepository;        
 
-        public RolesController(ISystemUserRepository systemUserRepository, RoleManager<IdentityRole> roleManager)
+        public RolesController(ISystemUserRepository systemUserRepository)
         {
-            _systemUserRepository = systemUserRepository;
-            _roleManager = roleManager;
+            _systemUserRepository = systemUserRepository;            
         }
         [Authorize(Roles = "admin")]
         public async Task<IActionResult> Index()
