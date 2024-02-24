@@ -3,6 +3,8 @@ using Inventory_System_Template_Web_App.Data;
 using Inventory_System_Template_Web_App.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
+using System.Xml.Linq;
 
 namespace Inventory_System_Template_Web_App.Repository
 {
@@ -47,10 +49,21 @@ namespace Inventory_System_Template_Web_App.Repository
             return GetAllRoles;
         }
 
-        public async Task<IdentityRole> GetByIdAsync(IdentityRole role)
+        public async Task<IdentityRole> GetByIdAsync(string id)
         {
-            var getRole = await _context.Roles.FirstOrDefaultAsync(x => x.Id == role.Id);
+            var getRole = await _context.Roles.FirstOrDefaultAsync(x => x.Id == id);
             return getRole ?? new IdentityRole() { Id = string.Empty };
+        }
+
+        public async Task<bool> isExist(string name)
+        {
+            return await _roleManager.RoleExistsAsync(name);
+        }
+
+        public async Task<IEnumerable<IdentityUserRole<string>>> GetAllUserRoleusingRoleId(string id)
+        {
+            var usersRoles = await _context.UserRoles.Where(x => x.UserId == id).ToListAsync();
+            return usersRoles;
         }
     }
 }
