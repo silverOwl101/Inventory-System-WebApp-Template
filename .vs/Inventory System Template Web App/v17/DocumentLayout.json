@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|c:\\exxxcube files\\projects\\c#\\inventory system template web app\\inventory system template web app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|solutionrelative:inventory system template web app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\appsettings.json",
+              "RelativeDocumentMoniker": "Inventory System Template Web App\\appsettings.json",
+              "ToolTip": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\appsettings.json",
+              "RelativeToolTip": "Inventory System Template Web App\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-04T15:41:44.917Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
