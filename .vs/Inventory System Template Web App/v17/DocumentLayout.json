@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|c:\\exxxcube files\\projects\\c#\\inventory system template web app\\inventory system template web app\\viewmodels\\additemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|solutionrelative:inventory system template web app\\viewmodels\\additemviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|c:\\exxxcube files\\projects\\c#\\inventory system template web app\\inventory system template web app\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|solutionrelative:inventory system template web app\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|c:\\exxxcube files\\projects\\c#\\inventory system template web app\\inventory system template web app\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|solutionrelative:inventory system template web app\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|c:\\exxxcube files\\projects\\c#\\inventory system template web app\\inventory system template web app\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|solutionrelative:inventory system template web app\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|c:\\exxxcube files\\projects\\c#\\inventory system template web app\\inventory system template web app\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E89E57DE-0451-4F84-874E-641326FB2FBD}|Inventory System Template Web App\\Inventory System Template Web App.csproj|solutionrelative:inventory system template web app\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddItemViewModel.cs",
+              "DocumentMoniker": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\ViewModels\\AddItemViewModel.cs",
+              "RelativeDocumentMoniker": "Inventory System Template Web App\\ViewModels\\AddItemViewModel.cs",
+              "ToolTip": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\ViewModels\\AddItemViewModel.cs",
+              "RelativeToolTip": "Inventory System Template Web App\\ViewModels\\AddItemViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:57:58.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "Inventory System Template Web App\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "Inventory System Template Web App\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-18T14:53:32.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Inventory System Template Web App\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Inventory System Template Web App\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:53:19.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\Views\\Product\\Add.cshtml",
+              "RelativeDocumentMoniker": "Inventory System Template Web App\\Views\\Product\\Add.cshtml",
+              "ToolTip": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\Views\\Product\\Add.cshtml",
+              "RelativeToolTip": "Inventory System Template Web App\\Views\\Product\\Add.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-18T14:47:30.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "Inventory System Template Web App\\Models\\Item.cs",
+              "ToolTip": "C:\\Exxxcube files\\Projects\\C#\\Inventory System Template Web App\\Inventory System Template Web App\\Models\\Item.cs",
+              "RelativeToolTip": "Inventory System Template Web App\\Models\\Item.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T14:44:10.333Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
