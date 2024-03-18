@@ -32,7 +32,7 @@ namespace Inventory_System_Template_Web_App.Controllers
             LoginViewModel loginViewModel = new LoginViewModel();
             if (_signInManager.IsSignedIn(User))
             {
-                return RedirectToAction("Index", "Account");
+                return RedirectToAction("Index", "Product");
             }
             else
             {
@@ -52,7 +52,7 @@ namespace Inventory_System_Template_Web_App.Controllers
                                                                       lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    return RedirectToAction("Index", "Account");
+                    return RedirectToAction("Index", "Product");
                 }
                 if (result.IsLockedOut)
                 {

@@ -33,16 +33,7 @@
             <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Confirm password" required>
             <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
         </div>
-
-        <!-- Roles Input -->
-        <div class="mb-3">
-            <label for="roleSelected" class="form-label">Role</label>
-            <div class="col-md-10">
-                <select asp-for="RoleSelected" asp-items="@Model.RoleList" class="form-control">
-                </select>
-            </div>
-        </div>
-
+        
         <!-- Submit Button -->
         <button type="submit" class="btn btn-primary">Register</button>
 

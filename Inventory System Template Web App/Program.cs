@@ -29,7 +29,7 @@ builder.Services.Configure<SendGridSettings>(builder.Configuration.GetSection("S
 builder.Services.Configure<IdentityOptions>(options =>
 {
     options.Password.RequiredLength = 8;
-    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
+    //options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
     options.Lockout.MaxFailedAccessAttempts = 5;
 });
 builder.Services.Configure<CookiePolicyOptions>(options =>
