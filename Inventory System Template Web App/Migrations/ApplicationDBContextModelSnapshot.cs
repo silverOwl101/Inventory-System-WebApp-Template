@@ -150,6 +150,10 @@ namespace Inventory_System_Template_Web_App.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
                     b.Property<bool>("InStock")
                         .HasColumnType("tinyint(1)");
 
@@ -159,6 +163,9 @@ namespace Inventory_System_Template_Web_App.Migrations
                     b.Property<string>("ProductName")
                         .IsRequired()
                         .HasColumnType("longtext");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.Property<string>("Sku")
                         .IsRequired()
