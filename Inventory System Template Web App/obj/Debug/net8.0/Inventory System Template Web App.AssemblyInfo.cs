@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Inventory System Template Web App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1189920f55f068bef689f49a0244bea6e33aed9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5cd2005fefa00e208b1916be0b850e4c8b20c32")]
 [assembly: System.Reflection.AssemblyProductAttribute("Inventory System Template Web App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inventory System Template Web App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

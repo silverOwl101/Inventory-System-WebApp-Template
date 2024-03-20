@@ -132,12 +132,16 @@ namespace Inventory_System_Template_Web_App.Migrations
 
             modelBuilder.Entity("Inventory_System_Template_Web_App.Models.Item", b =>
                 {
-                    b.Property<Guid>("Guid")
+                    b.Property<Guid?>("Guid")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("char(36)");
 
                     b.Property<string>("AppUserId")
                         .HasColumnType("varchar(255)");
+
+                    b.Property<string>("BrandName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("Category")
                         .IsRequired()
@@ -146,8 +150,10 @@ namespace Inventory_System_Template_Web_App.Migrations
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime(6)");
 
+                    b.Property<DateTime>("DateModified")
+                        .HasColumnType("datetime(6)");
+
                     b.Property<string>("Id")
-                        .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<string>("Image")

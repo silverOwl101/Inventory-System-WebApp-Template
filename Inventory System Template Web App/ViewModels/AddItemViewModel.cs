@@ -10,6 +10,6 @@ namespace Inventory_System_Template_Web_App.ViewModels
         public int Price { get; set; }
         public required string? Category { get; set; }
         public required int Quantity { get; set; }
-        public required IFormFile Image { get; set; }
+        public IFormFile? Image { get; set; }
     }
 }

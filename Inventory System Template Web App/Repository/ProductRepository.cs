@@ -1,6 +1,7 @@
 ﻿using Inventory_System_Template_Web_App.Data;
 using Inventory_System_Template_Web_App.Interfaces;
 using Inventory_System_Template_Web_App.Models;
+using Inventory_System_Template_Web_App.ViewModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace Inventory_System_Template_Web_App.Repository
@@ -43,6 +44,7 @@ namespace Inventory_System_Template_Web_App.Repository
                                  Guid = Guid.Empty,
                                  Id = string.Empty,
                                  Sku = string.Empty,
+                                 BrandName = string.Empty!,
                                  ProductName = string.Empty,
                                  Price = 0,
                                  Category = string.Empty,
@@ -60,6 +62,7 @@ namespace Inventory_System_Template_Web_App.Repository
                                 Guid = Guid.Empty,
                                 Id = string.Empty,
                                 Sku = string.Empty,
+                                BrandName = string.Empty,
                                 ProductName = string.Empty,
                                 Price = 0,
                                 Category = string.Empty,
