@@ -1,9 +1,0 @@
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net6.0\Inventory System Template Web App.csproj.AssemblyReference.cache
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net6.0\Inventory System Template Web App.GeneratedMSBuildEditorConfig.editorconfig
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net6.0\Inventory System Template Web App.AssemblyInfoInputs.cache
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net6.0\Inventory System Template Web App.AssemblyInfo.cs
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net6.0\Inventory System Template Web App.csproj.CoreCompileInputs.cache
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net6.0\Inventory System Template Web App.MvcApplicationPartsAssemblyInfo.cache
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net6.0\Inventory System Template Web App.RazorAssemblyInfo.cache
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net6.0\Inventory System Template Web App.RazorAssemblyInfo.cs
-C:\Exxxcube files\Projects\C#\Inventory System Template Web App\Inventory System Template Web App\obj\Debug\net6.0\Inventory System Template Web App.sourcelink.json
